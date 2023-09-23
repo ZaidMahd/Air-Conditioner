@@ -1,0 +1,558 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+body{
+    width: 100%;
+    background-color:#c5c5c5;
+}
+.nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid wheat;
+    box-shadow: 2px 2px 2px wheat;
+}
+
+.logo{
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 25px;
+    
+}
+
+.logo img{
+    width: 60%;
+    height: 85%;
+    object-fit: cover;
+    object-position: center;
+    padding: 2px;
+    cursor: pointer;
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+
+}
+
+
+
+
+.menu{
+    display:flex ;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu li{
+    padding: 10px;
+    
+}
+
+
+.menu a{
+text-decoration: none;
+color: black;
+margin-right: 20px;
+font-weight: 600;
+
+}
+
+.menu button{
+    padding: 12px;
+    width: 120px;
+    background-color: #61CE70;
+    border: none;
+    font-size: 16px;
+    margin-right: 20px;
+    cursor: pointer;
+    color: white;
+    border: 1px solid #61CE70;
+    
+    
+}
+
+.navbar button:hover{
+    background-color:transparent;
+    border: 1px solid #61CE70;
+    color: black;
+}
+
+button a{
+    text-decoration: none;
+    
+}
+
+
+label{
+    display: none;
+    
+}
+
+input{
+    display: none;
+}
+
+
+
+
+.hero{
+    width: 100%;
+    height: auto;
+    position: relative;
+    
+}
+
+.hero img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+
+}
+
+
+.cnt{
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cnt h1{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.cnt h2{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.cnt p{
+    padding: 5px;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.cnt .btn{
+    padding: 12px;
+    width: 200px;
+    background-color: #61CE70;
+    border: none;
+    font-size: 16px;
+    margin-right: 20px;
+    cursor: pointer;
+    color: white;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 2px solid #61CE70;
+
+}
+
+.cnt .btn:hover{
+    background-color: transparent;
+    color: white;
+    box-shadow: 0px 0px 0px;
+}
+
+.about-main{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.about{
+    margin-top: 40px;
+    margin: 40px;
+    width: 40%;
+
+
+}
+
+.about h2{
+    font-size: 40px;
+    color: #22aaa8;
+    font-weight: 100;
+    
+}
+
+
+
+.about p{
+    width: 100%;
+    line-height: 22px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: rgba(48, 48, 48, 0.9);
+    
+}
+
+.about p span {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #22aaa8;
+}
+
+.about .btn{
+    padding: 12px;
+    width: 250px;
+    background-color: #61CE70;
+    border: none;
+    font-size: 16px;
+    margin-right: 20px;
+    cursor: pointer;
+    color: white;
+    margin-top: 30px;
+    border-radius: 4px;
+    border: 2px solid #61CE70;
+
+}
+
+.image{
+    margin-top: 50px;
+    width: 50%;
+}
+
+.service{
+    width: 100%;
+    margin: 30px auto;
+    background-color: rgb(43, 43, 43);
+    height: 115vh;
+
+}
+
+.service h2{
+    text-align: center;
+    font-size: 40px;
+    color: #22aaa8;
+    position: relative;
+    font-weight: 100;}
+
+    .service h2::after {
+        content: "";
+        background-color: #22aaa8;
+        width: 60px;
+        position: absolute;
+        left: 48%;
+        display: block;
+        height: 2px;
+
+    }
+.boxs{
+   
+    width: 100%;
+            height: 100vh;
+           display: grid;
+           grid-template-columns: 30% 30% 30%;
+           grid-template-rows: 48% 48%;
+           justify-content: center;
+           align-content: center;
+           grid-row-gap: 1%;
+           grid-column-gap: 1%;
+
+}
+
+.box{
+    background-color: white;
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.box a{
+    text-decoration: none ;
+}
+
+.box img{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    border: 1px solid gray;
+    
+}
+
+.box h6{
+    font-size: 18px;
+    color: gray;
+}
+
+.box button{
+    padding: 8px;
+    margin-top: 10px;
+    border: none;
+    background-color: royalblue;
+    color: white;
+}
+
+.box:hover{
+    background-color: rgb(43, 43, 43);
+    color: white;
+}
+
+
+.contact{
+    width: 100%;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: royalblue;
+
+}
+
+.contact-ctn{
+    color: white;
+    width: 30%;
+}
+
+.contact-ctn h2{
+    font-size: 40px;
+}
+
+.contact-ctn p{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.map{
+    width: 70%;
+    height: 300px;
+}
+
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.foot{
+    width: 100%;
+    background-color: rgb(43, 43, 43);
+    height: 200px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.foot ul{
+    width: 70%;
+    margin: auto;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.foot a{
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.foot p{
+    margin-right: 10%;
+}
+
+
+
+@media  (max-width:600px){
+
+    .logo{
+        width: 70%;
+    }
+   
+    .navbar{
+        display: none;
+    }
+
+    .menu{
+        flex-direction: column;
+        gap: 0px;
+        text-align: center;
+
+    }
+
+   
+
+    .menu a{
+        color: white;
+    }
+
+    .menu button:hover{
+        color: white;
+        
+    }
+
+
+    label{
+        display: block;
+    color: black;
+    margin-right: 20px;
+    }
+
+    input:checked~ .navbar{
+        display: block;
+        position: absolute;
+        top: 70px;
+        background-color: rgb(70, 70, 70);
+        color: white;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        height: 230px;
+    }
+
+
+    
+   
+
+    .cnt{
+        text-align: center;
+    }
+
+    .foot ul{
+        width: 100%;
+    }
+
+
+    .hero{
+        width: 100%;
+        height: 40vh;
+        position: relative;
+        
+    }
+
+    .hero img{
+        object-fit: cover;
+        object-position:90%;
+        width: 100%;
+        height: 100%;
+    }
+    
+
+    .about{
+        margin-top: 40px;
+        margin: 40px;
+        width: 100%;
+        height: auto;
+    
+    }
+    .image{
+        width: 100%;
+        height: 250px;
+    }
+
+    .image img{
+        height: 100%;
+        width: 100%;
+    }
+
+
+    .contact-ctn{
+        color: white;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .contact-ctn h2{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .map{
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .service{
+        width: 100%;
+        margin-top: 30px;
+        margin: 30px auto;
+        background-color: #28231d;
+        height: auto;
+    
+    }
+
+
+
+    .boxs{
+   
+        width: 100%;
+               display: grid;
+               grid-template-columns: 48% 48%;
+               grid-template-rows: 30% 30% 30%;
+               justify-content: center;
+               align-content: center;
+               grid-column-gap: 1%;
+               
+    
+    }
+
+
+    .service h2::after {
+        content: "";
+        background-color: #22aaa8;
+        width: 60px;
+        position: absolute;
+        left: 43%;
+        display: block;
+        height: 2px;
+
+    }
+
+    .box-washing h6{
+        margin-bottom: 2px;
+    }
+
+
+
+    .about{
+        text-align: center;
+    }
+
+    .about p span{
+        text-align: center;
+
+    }
+
+    .about p{
+        text-align: left;
+    }
+
+    .image{
+        margin-left: 30px;
+        margin-top: -10px;
+    }
+
+}
